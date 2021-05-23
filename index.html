@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="rps.css">
+  <script src="./js/rps.js" defer></script>
+</head>
+
+<body class="preload">
+  <div class="head">
+    <img src="images/logo.svg" alt="logo">
+    <div class="score">
+      <div class="score__title">score</div>
+      <div class="score__number">0</div>
+    </div>
+  </div>
+  <div class="container">
+
+    <div class="content">
+      <div class="choice paper" data-choice="paper" tabindex="2">
+        <img src="images/icon-paper.svg" alt="icon-paper">
+      </div>
+
+      <div class="choice scissors" data-choice="scissors" tabindex="3">
+        <img src="images/icon-scissors.svg" alt="icon-scissors">
+      </div>
+
+      <div class="choice rock" data-choice="rock" tabindex="4">
+        <img src="images/icon-rock.svg" alt="icon-rock">
+      </div>
+    </div>
+
+    <div class="rules" tabindex="1">Rules</div>
+  </div>
+  <section class="result hidden">
+    <h2 class="result__heading">you picked</h2>
+    <h2 class="result__heading">the house picked</h2>
+    <div class="result__picked"></div>
+    <div class="result__winner hidden">
+      <h3 class="result__winner__text"></h3>
+      <button class="play-again">play again</button>
+    </div>
+    <div class="result__picked"></div>
+  </section>
+  <div class="modal">
+    <div class="modal__container">
+      <div class="modal__container__head">
+        <h2>RULES</h2>
+        <span class="modal-close">&#10006;</span>
+      </div>
+      <div class="modal__container__content">
+        <img src="./images/image-rules.svg" alt="rules-img">
+      </div>
+    </div>
+  </div>
+
+  <!--<footer class="footer">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Alnoor</a>.
+  </footer>-->
+</body>
+
+</html>
